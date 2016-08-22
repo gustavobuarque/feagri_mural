@@ -35,29 +35,13 @@ Ocultar linhas quando a hora final menos 1 hora for igual a hora corrente
 jQuery(document).ready(function(){
 
   function loadJSON(){
-    //var url = "salaaula.json";
-    var url = "http://www.feagri.unicamp.br/portal/templates/simplesimon/includes/sala_aula.php"
+    var url = "salaaula.json";
+    //var url = "http://www.feagri.unicamp.br/portal/templates/simplesimon/includes/sala_aula.php"
     $.getJSON(url, function(result){
       renderList(result);
       InfiniteRotator.init();  
     }); // end getJSON 
 
-    //   $.ajax({
-    //         type: "GET",
-    //         //url: "/portal/templates/simplesimon/includes/sala_aula.php",
-    //         url: "salaaula.json",
-    //         dataType: "json",
-    //         success: function (result, jqXHR) {
-    //             return result;
-    //             });
-    //         },
-    //         error: function (jqXHR, status) {
-    //             // Exibir mensagem de erro, caso aconteça...
-    //             $("#resultado").html("<center>O servidor não conseguiu processar a consulta...</center>");
-    //         }
-
-    //   });
-    // renderList();
   } // end loadJSON
 
   function renderList(result){
@@ -97,19 +81,20 @@ jQuery(document).ready(function(){
       var initialFadeIn = 1000;
       
       //interval between items (in milliseconds)
-      var itemInterval = 4000;
+      var itemInterval = 10000;
       
       //cross-fade time (in milliseconds)
       var fadeTime = 2500;
       
       //count number of items
-      var numberOfItems = $('#ticker li').length + 9;
+      var numberOfItems = $('#ticker li').length;
 
       //set current item
       var currentItem = 1;
       var currentGroup = 0;
       var untilGroup = 11;
-      
+      var nInteracoes = Math.ceil(numberOfItems/10);
+
       //show first item
       $('#ticker li:nth-child(n+'+ currentItem +')').fadeIn(fadeTime).nextUntil('#ticker li:nth-of-type(n+'+ untilGroup +')').fadeIn(fadeTime);
       
@@ -118,15 +103,18 @@ jQuery(document).ready(function(){
 
         $('#ticker li:nth-child(n+'+ currentItem +')').fadeOut(fadeTime).nextUntil('#ticker li:nth-of-type(n+'+ untilGroup +')').fadeOut(fadeTime);
 
-        if(currentGroup >= numberOfItems){
+        if(currentItem > nInteracoes-1){
           currentGroup = 0;
-          untilGroup = 11;
-          $('#ticker li').removeAttr('style'); 
+          untilGroup = 11; 
+          currentItem = 1;
+          $('#ticker li').removeAttr('style');
+          
 
         }else{
           untilGroup += 10;
           currentGroup += 10;
-
+          currentItem++
+          //console.log("cg: "+currentGroup +" nI: "+numberOfItems+" ug: "+untilGroup + " cI: "+currentItem); 
         }
         $('#ticker li:nth-of-type('+currentGroup+'n)').nextUntil('#ticker li:nth-of-type(n+'+untilGroup+')').fadeIn(fadeTime);
 
