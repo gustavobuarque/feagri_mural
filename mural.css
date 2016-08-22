@@ -1,0 +1,23 @@
+h1.diatitle{text-align: center;}
+ul#header li, ul#ticker li{
+	list-style: none;
+}
+ul#header li div, ul#ticker li div{
+	float: left;
+}
+ul#header li div.h, ul#ticker li div.h{	width: 10%; }
+ul#header li div.s, ul#ticker li div.s{	width: 10%; }
+ul#header li div.t, ul#ticker li div.t{	width: 10%; }
+ul#header li div.di, ul#ticker li div.di{	width: 35%; }
+ul#header li div.do, ul#ticker li div.do{	width: 35%; }
+
+ul#ticker {
+	height: 470px;
+	overflow: hidden;
+}
+
+ul#ticker li {
+	height: 49px;
+	padding: 10px;
+	border-bottom: 1px dashed #ccc;
+}

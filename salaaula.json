@@ -1,0 +1,249 @@
+[{
+	"horario": "08:00 até 10:00",
+	"sala": "EA04",
+	"turma": "A",
+	"sigla": "FA564",
+	"disciplina": "Barragens e Estradas de Terra ",
+	"docente": "David de Carvalho",
+	"foto": "\"\""
+}, {
+	"horario": "08:00 até 10:00",
+	"sala": "EA05",
+	"turma": "A",
+	"sigla": "FA780",
+	"disciplina": "Instalações Elétricas para Sistemas Agroindustriais",
+	"docente": "Luiz Antonio Rossi",
+	"foto": "\"\""
+}, {
+	"horario": "08:00 até 10:00",
+	"sala": "EA01",
+	"turma": "A",
+	"sigla": "FA474",
+	"disciplina": "Dinâmica de Sistemas ",
+	"docente": "Angel Pontin Garcia",
+	"foto": "\"\""
+}, {
+	"horario": "08:00 até 10:00",
+	"sala": "EA06",
+	"turma": "A",
+	"sigla": "FA094",
+	"disciplina": "Segurança do Trabalho Rural",
+	"docente": "Roberto Funes Abrahao",
+	"foto": "\"\""
+}, {
+	"horario": "08:00 até 12:00",
+	"sala": "EA05",
+	"turma": "A",
+	"sigla": "FA879",
+	"disciplina": "Tecnologia de Processos Pós-Colheita II",
+	"docente": "Rafael Augustus de Oliveira",
+	"foto": "\"\""
+}, {
+	"horario": "09:00 até 12:00",
+	"sala": "EA11",
+	"turma": "A",
+	"sigla": "AP631",
+	"disciplina": "Secagem Aplicada a Produtos Agrícolas ",
+	"docente": "Rafael Augustus de Oliveira",
+	"foto": "\"\""
+}, {
+	"horario": "09:00 até 12:00",
+	"sala": "EA02",
+	"turma": "A",
+	"sigla": "AP333",
+	"disciplina": "Madeira: Tecnologia e Aplicações ",
+	"docente": "Julio Soriano",
+	"foto": "\"\""
+}, {
+	"horario": "09:00 até 12:00",
+	"sala": "EA13",
+	"turma": "A",
+	"sigla": "FA665",
+	"disciplina": "Geotecnologias I ",
+	"docente": "Jansle Vieira Rocha",
+	"foto": "\"\""
+}, {
+	"horario": "09:00 até 12:00",
+	"sala": "EA16",
+	"turma": "A",
+	"sigla": "AP532",
+	"disciplina": "Preparação de Dados para Mineração de Dados ",
+	"docente": "Stanley Robson de Medeiros Oliveira",
+	"foto": "\"\""
+}, {
+	"horario": "09:00 até 12:00",
+	"sala": "EA13",
+	"turma": "A",
+	"sigla": "AP500",
+	"disciplina": "Financiamento do Setor Rural ",
+	"docente": "Marco Tulio Ospina Patino",
+	"foto": "\"\""
+}, {
+	"horario": "09:00 até 12:00",
+	"sala": "EA07",
+	"turma": "A",
+	"sigla": "AP183",
+	"disciplina": "Estudo Dirigido em Projeto de Máquinas e Equipame",
+	"docente": "Barbara Teruel Mederos",
+	"foto": "\"\""
+}, {
+	"horario": "09:00 até 17:00",
+	"sala": "EA02",
+	"turma": "A",
+	"sigla": "AP353",
+	"disciplina": "Ultrassom Aplicado ao Material Madeira: Aspectos T",
+	"docente": "Raquel Goncalves",
+	"foto": "\"\""
+}, {
+	"horario": "10:00 até 12:00",
+	"sala": "EA11",
+	"turma": "A",
+	"sigla": "FA018",
+	"disciplina": "Tecnologia de Sementes ",
+	"docente": "Juliana Aparecida Fracarolli",
+	"foto": "\"\""
+}, {
+	"horario": "10:00 até 12:00",
+	"sala": "EA21",
+	"turma": "A",
+	"sigla": "FA100",
+	"disciplina": "Engenharia Agrícola: curso e profissão",
+	"docente": "Rafael Augustus de Oliveira",
+	"foto": "\"\""
+}, {
+	"horario": "10:00 até 12:00",
+	"sala": "EA04",
+	"turma": "A",
+	"sigla": "AM030",
+	"disciplina": "Técnicas e Organização de Apresentações em Público",
+	"docente": "Mauro Jose Andrade Tereso",
+	"foto": "\"\""
+}, {
+	"horario": "10:00 até 12:00",
+	"sala": "EA01",
+	"turma": "B",
+	"sigla": "FA379",
+	"disciplina": "Introdução Á  Termodinâmica ",
+	"docente": "Franciane Colares Souza Usberti",
+	"foto": "\"\""
+}, {
+	"horario": "13:00 até 16:00",
+	"sala": "EA08",
+	"turma": "A",
+	"sigla": "AP318",
+	"disciplina": "Conforto Térmico na Produção Animal ",
+	"docente": "Daniella Jorge de Moura",
+	"foto": "\"\""
+}, {
+	"horario": "14:00 até 16:00",
+	"sala": "EA04",
+	"turma": "A",
+	"sigla": "FA682",
+	"disciplina": "Modelagem Estrutural Aplicada ",
+	"docente": "Roberto Funes Abrahao",
+	"foto": "\"\""
+}, {
+	"horario": "14:00 até 16:00",
+	"sala": "EA05",
+	"turma": "A",
+	"sigla": "FA074",
+	"disciplina": "Tecnologia em Agricultura de Precisão ",
+	"docente": "Lucas Rios do Amaral",
+	"foto": "\"\""
+}, {
+	"horario": "14:00 até 16:00",
+	"sala": "EA06",
+	"turma": "A",
+	"sigla": "FA074",
+	"disciplina": "Tecnologia em Agricultura de Precisão ",
+	"docente": "Lucas Rios do Amaral",
+	"foto": "\"\""
+}, {
+	"horario": "14:00 até 16:00",
+	"sala": "EA04",
+	"turma": "B",
+	"sigla": "FA576",
+	"disciplina": "Prop. Mecânicas de Materiais Biológicos ",
+	"docente": "Inacio Dal Fabbro",
+	"foto": "\"\""
+}, {
+	"horario": "14:00 até 17:00",
+	"sala": "EA05",
+	"turma": "A",
+	"sigla": "FA071",
+	"disciplina": "Sociologia e Extensão Rural ",
+	"docente": "Ariovaldo José da Silva",
+	"foto": "\"\""
+}, {
+	"horario": "14:00 até 17:00",
+	"sala": "EA21",
+	"turma": "A",
+	"sigla": "FA782",
+	"disciplina": "Dimensionamento de Estrut. de Concreto ",
+	"docente": "Julio Soriano",
+	"foto": "\"\""
+}, {
+	"horario": "14:00 até 17:00",
+	"sala": "EA02",
+	"turma": "A",
+	"sigla": "AP229",
+	"disciplina": "Engenharia de Irrigação II: Avaliação de Sistemas ",
+	"docente": "Edson Eiji Matsura",
+	"foto": "\"\""
+}, {
+	"horario": "14:00 até 17:00",
+	"sala": "EA03",
+	"turma": "C",
+	"sigla": "AP181",
+	"disciplina": "Estudo Dirigido em Água e Solo ",
+	"docente": "Gustavo Mockaitis",
+	"foto": "\"\""
+}, {
+	"horario": "14:00 até 17:00",
+	"sala": "EA06",
+	"turma": "A",
+	"sigla": "AP184",
+	"disciplina": "Estudo Dirigido em Planejamento e Desenvolvimento ",
+	"docente": "Marco Tulio Ospina Patino",
+	"foto": "\"\""
+}, {
+	"horario": "14:00 até 17:00",
+	"sala": "EA07",
+	"turma": "C",
+	"sigla": "AP184",
+	"disciplina": "Estudo Dirigido em Planejamento e Desenvolvimento ",
+	"docente": "Mauro Jose Andrade Tereso",
+	"foto": "\"\""
+}, {
+	"horario": "14:00 até 18:00",
+	"sala": "EA18",
+	"turma": "A",
+	"sigla": "FA084",
+	"disciplina": "Intr.Mineração Dados: Conceitos e Aplic.Agric",
+	"docente": "Luiz Henrique Antunes Rodrigues",
+	"foto": "\"\""
+}, {
+	"horario": "16:00 até 18:00",
+	"sala": "EA04",
+	"turma": "A",
+	"sigla": "FA679",
+	"disciplina": "Tecnologia de Processos Pós-Colheita I ",
+	"docente": "Franciane Colares Souza Usberti",
+	"foto": "\"\""
+}, {
+	"horario": "16:00 até 18:00",
+	"sala": "EA01",
+	"turma": "A",
+	"sigla": "FA425",
+	"disciplina": "Instrumentação Básica ",
+	"docente": "Barbara Teruel Mederos",
+	"foto": "\"\""
+}, {
+	"horario": "16:00 até 19:00",
+	"sala": "EA08",
+	"turma": "A",
+	"sigla": "AP398",
+	"disciplina": "Qualidade do Ar e Avaliação de Poluentes Aéreos e ",
+	"docente": "Daniella Jorge de Moura",
+	"foto": "\"\""
+}]
