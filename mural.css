@@ -21,3 +21,8 @@ ul#ticker li {
 	padding: 10px;
 	border-bottom: 1px dashed #ccc;
 }
+
+ul#ticker li div.do img{
+	width: 40px;
+	border-radius: 20px;
+}
