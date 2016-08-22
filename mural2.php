@@ -43,6 +43,7 @@ jQuery(document).ready(function(){
     var url = "salaaula.json";
     $.getJSON(url, function(result){
       renderList(result);
+      InfiniteRotator.init();
     }); // end getJSON 
 
     //   $.ajax({
@@ -67,6 +68,7 @@ jQuery(document).ready(function(){
 
     $("#ticker").empty();
     // Listando cada cliente encontrado na lista...
+    
     $.each(result,function(i, aula){
         var listHtml = '<li>';
         listHtml += '<div class="h">' + aula.horario + '</div>';
@@ -96,13 +98,13 @@ jQuery(document).ready(function(){
     init: function()
     {
       //initial fade-in time (in milliseconds)
-      var initialFadeIn = 1000;
+      var initialFadeIn = 100;
       
       //interval between items (in milliseconds)
-      var itemInterval = 4000;
+      var itemInterval = 1000;
       
       //cross-fade time (in milliseconds)
-      var fadeTime = 2500;
+      var fadeTime = 250;
       
       //count number of items
       var numberOfItems = $('#ticker li').length;
@@ -117,9 +119,10 @@ jQuery(document).ready(function(){
       var infiniteLoop = setInterval(function(){
         $('#ticker li').eq(currentItem).fadeOut(fadeTime);
 
-        if(currentItem == numberOfItems -1){
+        if(currentItem === numberOfItems - 1){
           currentItem = 0;
-
+          $('#ticker li').show();
+          $('#ticker li').eq(currentItem).fadeOut(fadeTime);
         }else{
           currentItem++;
           console.log("Current Item: "+currentItem+"\n"+"Number of Items - 1: "+numberOfItems);
@@ -131,7 +134,7 @@ jQuery(document).ready(function(){
   };
 
   loadJSON();
-  InfiniteRotator.init();
+  
   
   /*function ticker(tempo){
     var j = 10;
