@@ -44,7 +44,8 @@ jQuery(document).ready(function(){
   
 
   function loadJSON(){
-    var url = "salaaula.json";
+    //var url = "salaaula.json";
+    var url = "http://www.feagri.unicamp.br/portal/templates/simplesimon/includes/sala_aula.php"
     $.getJSON(url, function(result){
       renderList(result);
     }); // end getJSON 
@@ -90,7 +91,6 @@ jQuery(document).ready(function(){
       //  }
       // }
       $("#ticker").append(listHtml);
-      
     
     }); // end each 
 

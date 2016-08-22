@@ -33,14 +33,10 @@ Ocultar linhas quando a hora final menos 1 hora for igual a hora corrente
 
 
 jQuery(document).ready(function(){
-//$("#resultado").empty();
-//var timeDelay = 5000;
-//var p1avez = 't';
-  //setInterval(loadJSON,timeDelay);
-  //setTimeout(loadJSON,timeDelay);
 
   function loadJSON(){
-    var url = "salaaula.json";
+    //var url = "salaaula.json";
+    var url = "http://www.feagri.unicamp.br/portal/templates/simplesimon/includes/sala_aula.php"
     $.getJSON(url, function(result){
       renderList(result);
       InfiniteRotator.init();  
@@ -115,26 +111,23 @@ jQuery(document).ready(function(){
       var untilGroup = 11;
       
       //show first item
-      //$('#ticker li').eq(currentItem).fadeIn(initialFadeIn);
-      //$('#ticker li:nth-child(-n+10)').fadeIn(initialFadeIn);
-
+      $('#ticker li:nth-child(n+'+ currentItem +')').fadeIn(fadeTime).nextUntil('#ticker li:nth-of-type(n+'+ untilGroup +')').fadeIn(fadeTime);
+      
       //loop through the items    
       var infiniteLoop = setInterval(function(){
-        //$('#ticker li').eq(currentItem).fadeOut(fadeTime);
+
         $('#ticker li:nth-child(n+'+ currentItem +')').fadeOut(fadeTime).nextUntil('#ticker li:nth-of-type(n+'+ untilGroup +')').fadeOut(fadeTime);
-        //$('#ticker li:nth-child('+previousGroup+'n+'+currentGroup+')').fadeOut(fadeTime);
+
         if(currentGroup >= numberOfItems){
+          currentGroup = 0;
           untilGroup = 11;
           $('#ticker li').removeAttr('style'); 
 
         }else{
-          //currentItem++;
           untilGroup += 10;
           currentGroup += 10;
 
-          console.log(currentGroup + " >= " + numberOfItems );
         }
-        //$('#ticker li').eq(currentItem).fadeIn(fadeTime);
         $('#ticker li:nth-of-type('+currentGroup+'n)').nextUntil('#ticker li:nth-of-type(n+'+untilGroup+')').fadeIn(fadeTime);
 
       }, itemInterval); 
@@ -143,28 +136,6 @@ jQuery(document).ready(function(){
 
   loadJSON();
 
-  
-  /*function ticker(tempo){
-    var j = 10;
-    var nItens = $('#ticker li').length;
-    setTimeout(function(){
-      $('#ticker li:nth-child(-n+'+j+')').fadeOut( 800, function() {
-        
-        //$('#ticker li:first').detach().appendTo('ul#ticker').removeAttr('style'); 
-        //$('#ticker li:first').detach().removeAttr('style'); 
-        //$(this).addClass('hide'); 
-        j++;
-      });
-      
-    ticker(tempo);
-
-    }, tempo);
-  
-  }
-  var tempo = 4000;
-
-  ticker(tempo);
-  */
 });
 </script>
 <?php
