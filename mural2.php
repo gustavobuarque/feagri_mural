@@ -43,7 +43,7 @@ jQuery(document).ready(function(){
     var url = "salaaula.json";
     $.getJSON(url, function(result){
       renderList(result);
-      InfiniteRotator.init();
+      InfiniteRotator.init();  
     }); // end getJSON 
 
     //   $.ajax({
@@ -98,43 +98,51 @@ jQuery(document).ready(function(){
     init: function()
     {
       //initial fade-in time (in milliseconds)
-      var initialFadeIn = 100;
+      var initialFadeIn = 1000;
       
       //interval between items (in milliseconds)
-      var itemInterval = 1000;
+      var itemInterval = 4000;
       
       //cross-fade time (in milliseconds)
-      var fadeTime = 250;
+      var fadeTime = 2500;
       
       //count number of items
-      var numberOfItems = $('#ticker li').length;
+      var numberOfItems = $('#ticker li').length + 9;
 
       //set current item
-      var currentItem = 0;
-
+      var currentItem = 1;
+      var currentGroup = 0;
+      var untilGroup = 11;
+      
       //show first item
-      $('#ticker li').eq(currentItem).fadeIn(initialFadeIn);
+      //$('#ticker li').eq(currentItem).fadeIn(initialFadeIn);
+      //$('#ticker li:nth-child(-n+10)').fadeIn(initialFadeIn);
 
       //loop through the items    
       var infiniteLoop = setInterval(function(){
-        $('#ticker li').eq(currentItem).fadeOut(fadeTime);
+        //$('#ticker li').eq(currentItem).fadeOut(fadeTime);
+        $('#ticker li:nth-child(n+'+ currentItem +')').fadeOut(fadeTime).nextUntil('#ticker li:nth-of-type(n+'+ untilGroup +')').fadeOut(fadeTime);
+        //$('#ticker li:nth-child('+previousGroup+'n+'+currentGroup+')').fadeOut(fadeTime);
+        if(currentGroup >= numberOfItems){
+          untilGroup = 11;
+          $('#ticker li').removeAttr('style'); 
 
-        if(currentItem === numberOfItems - 1){
-          currentItem = 0;
-          $('#ticker li').show();
-          $('#ticker li').eq(currentItem).fadeOut(fadeTime);
         }else{
-          currentItem++;
-          console.log("Current Item: "+currentItem+"\n"+"Number of Items - 1: "+numberOfItems);
+          //currentItem++;
+          untilGroup += 10;
+          currentGroup += 10;
+
+          console.log(currentGroup + " >= " + numberOfItems );
         }
-        $('#ticker li').eq(currentItem).fadeIn(fadeTime);
+        //$('#ticker li').eq(currentItem).fadeIn(fadeTime);
+        $('#ticker li:nth-of-type('+currentGroup+'n)').nextUntil('#ticker li:nth-of-type(n+'+untilGroup+')').fadeIn(fadeTime);
 
       }, itemInterval); 
     } 
   };
 
   loadJSON();
-  
+
   
   /*function ticker(tempo){
     var j = 10;
