@@ -25,6 +25,27 @@ $app->initialise();
 */?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script type="text/javascript" charset="utf-8">
+
+
+/*Função para dar refresh na página*/
+  function refreshAt(hours, minutes, seconds) {
+    var now = new Date();
+    var then = new Date();
+
+    if(now.getHours() > hours ||
+       (now.getHours() == hours && now.getMinutes() > minutes) ||
+        now.getHours() == hours && now.getMinutes() == minutes && now.getSeconds() >= seconds) {
+        then.setDate(now.getDate() + 1);
+    }
+    then.setHours(hours);
+    then.setMinutes(minutes);
+    then.setSeconds(seconds);
+
+    var timeout = (then.getTime() - now.getTime());
+    setTimeout(function() { window.location.reload(true); }, timeout);
+}
+
+
 /*
 Mostrar 10 linhas a cada X minutos
 Ocultar linhas quando a hora final menos 1 hora for igual a hora corrente
@@ -40,9 +61,11 @@ jQuery(document).ready(function(){
     $.getJSON(url, function(result){
       renderList(result);
       InfiniteRotator.init();  
+      refreshAt(06,00,00); //Will refresh the page at 8:00pm on Monday UTC or 3:00pm EST
     }); // end getJSON 
 
   } // end loadJSON
+
 
   function renderList(result){
 
@@ -125,6 +148,9 @@ jQuery(document).ready(function(){
   loadJSON();
 
 });
+
+  
+
 </script>
 <?php
 $ano = date("Y");
