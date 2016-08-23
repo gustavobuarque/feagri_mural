@@ -1,20 +1,4 @@
-[{
-	"horario": "08:00 até 10:00",
-	"sala": "EA04",
-	"turma": "A",
-	"sigla": "FA564",
-	"disciplina": "Barragens e Estradas de Terra ",
-	"docente": "David de Carvalho",
-	"foto": "\"\""
-}, {
-	"horario": "08:00 até 10:00",
-	"sala": "EA05",
-	"turma": "A",
-	"sigla": "FA780",
-	"disciplina": "Instalações Elétricas para Sistemas Agroindustriais",
-	"docente": "Luiz Antonio Rossi",
-	"foto": "\"\""
-}, {
+[ {
 	"horario": "08:00 até 10:00",
 	"sala": "EA01",
 	"turma": "A",
